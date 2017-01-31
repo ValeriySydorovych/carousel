@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  ul, li, img {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    max-width: 748px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height:320px;
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    width: 2000em;
+    height: 300px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  li {
+    float: left;
+    width: 748px;
+    position: absolute;
+  }
+  button {
+  }
+  .right {
+    float:right;
+  }
+</style>
+<body>
+<main>
+  <ul class="carousel">
+    <li><img src="img/img1.jpg" alt="1"></li>
+    <li style="display: none"><img src="img/img2.jpg" alt="2"></li>
+    <li style="display: none"><img src="img/img3.jpg" alt="3"></li>
+  </ul>
+  <button class="left"><=</button>
+  <button class="right">=></button>
+</main>
+
+<script src = 'js/main.js'></script>
+</body>
+</html>
+
